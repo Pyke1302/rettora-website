@@ -18,7 +18,7 @@ Alles hier ist für jeden lesbar, auch Commits und Branches. Deshalb nie ins Rep
 - Einziges JavaScript ist `assets/anfrage.js`: Der Anfragebogen bereitet eine E-Mail im Mailprogramm der Besucher vor und überträgt nichts an die Website. Ohne JavaScript bleibt er ausgeblendet; die Seite funktioniert trotzdem.
 - Veröffentlichung über den Workflow „Website veröffentlichen (GitHub Pages)“, nur von Hand und nur nach Freigabe von Felix. Er bricht ab, solange markierte Platzhalter offen sind.
 - Schriften (Archivo, Source Serif 4) liegen selbst gehostet in `assets/fonts/` (SIL Open Font License). Keine Google Fonts oder anderen Drittanbieter einbinden, damit keine Daten an Dritte gehen.
-- Farben folgen dem Akademie-Design der Lernplattform und sind als Variablen oben in `assets/site.css` definiert, mit dunkler Variante über `prefers-color-scheme`.
+- Farben: typisches Rettora-Blau wie in der Lernplattform und den Shorts (Navy `#07172d`, Cyan `#20d4d9` als Akzent, Rot `#ff6b75` als Signal). Als Variablen oben in `assets/site.css` definiert. Die Seite hat nur dieses eine Farbschema, unabhängig von der Systemeinstellung.
 - Alle Seiten tragen bis zum Livegang `noindex, nofollow`.
 
 ## Inhaltliche Regeln
