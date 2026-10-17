@@ -1,0 +1,49 @@
+name: Website veröffentlichen (GitHub Pages)
+
+# Läuft nur von Hand. Vorher in den Repo-Einstellungen unter
+# Settings → Pages die Quelle „GitHub Actions“ wählen.
+# Impressum, Datenschutz und Kontaktadresse müssen ausgefüllt sein.
+on:
+  workflow_dispatch:
+
+permissions:
+  contents: read
+  pages: write
+  id-token: write
+
+concurrency:
+  group: pages
+  cancel-in-progress: false
+
+jobs:
+  deploy:
+    runs-on: ubuntu-latest
+    environment:
+      name: github-pages
+      url: ${{ steps.deployment.outputs.page_url }}
+    steps:
+      - uses: actions/checkout@v4
+
+      - name: Platzhalter prüfen
+        run: |
+          if grep -nE '\[(Straße|PLZ|Kontaktadresse|Anschrift)' impressum.html datenschutz.html; then
+            echo "Impressum/Datenschutz enthalten noch Platzhalter." >&2
+            exit 1
+          fi
+          if grep -nE 'KONTAKT_EMAIL = ""' assets/app.js; then
+            echo "Kontaktadresse in assets/app.js fehlt." >&2
+            exit 1
+          fi
+
+      - name: Seite zusammenstellen
+        run: |
+          mkdir _site
+          cp index.html impressum.html datenschutz.html _site/
+          cp -r assets _site/
+
+      - uses: actions/configure-pages@v5
+      - uses: actions/upload-pages-artifact@v3
+        with:
+          path: _site
+      - id: deployment
+        uses: actions/deploy-pages@v4
