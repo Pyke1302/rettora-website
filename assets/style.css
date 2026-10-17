@@ -66,8 +66,8 @@ p { margin: 0; }
 .header-row { display: flex; align-items: center; justify-content: space-between; height: 68px; gap: 16px; }
 .brand { display: flex; align-items: center; gap: 10px; color: var(--ink); text-decoration: none; font-weight: 800; font-stretch: 125%; font-size: 1.2rem; }
 .brand-mark { width: 30px; height: 30px; }
-.brand-mark rect { fill: var(--ink); }
-.brand-mark path { fill: var(--cyan-bright); }
+.brand-mark rect { fill: none; stroke: var(--ink); stroke-width: 3; }
+.brand-mark path { fill: var(--signal); }
 .site-header nav { display: flex; align-items: center; gap: 26px; }
 .site-header nav a { color: var(--ink); text-decoration: none; font-size: 0.95rem; font-weight: 500; }
 .site-header nav a:hover { color: var(--cyan); }
