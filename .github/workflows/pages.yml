@@ -41,6 +41,12 @@ jobs:
           cp index.html impressum.html datenschutz.html _site/
           cp -r assets _site/
 
+      - name: Eigene Domain (optional)
+        # Repo-Variable PAGES_DOMAIN setzen, z. B. "www.rettora.de".
+        # Leer lassen, solange die Seite unter github.io laufen soll.
+        if: ${{ vars.PAGES_DOMAIN != '' }}
+        run: echo "${{ vars.PAGES_DOMAIN }}" > _site/CNAME
+
       - uses: actions/configure-pages@v5
       - uses: actions/upload-pages-artifact@v3
         with:

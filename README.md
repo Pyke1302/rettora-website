@@ -30,3 +30,14 @@ Lokal ansehen: `python3 -m http.server` im Repo starten und `http://localhost:80
 2. Impressum und Datenschutz vollständig ausfüllen.
 3. In den Repo-Einstellungen unter **Settings → Pages** als Quelle **GitHub Actions** wählen.
 4. Unter **Actions → „Website veröffentlichen (GitHub Pages)“** den Workflow von Hand starten. Er bricht ab, solange Platzhalter oder die Kontaktadresse fehlen.
+
+## Eigene Domain (später)
+
+1. Domain kaufen, z. B. bei IONOS, Strato oder All-Inkl.
+2. Beim Domain-Anbieter einen DNS-Eintrag anlegen:
+   - für `www.deine-domain.de`: **CNAME** auf `pyke1302.github.io`
+   - für die Domain ohne `www`: vier **A-Einträge** auf `185.199.108.153`, `185.199.109.153`, `185.199.110.153`, `185.199.111.153`
+3. Im Repo unter **Settings → Secrets and variables → Actions → Variables** die Variable `PAGES_DOMAIN` anlegen, z. B. `www.rettora.de`.
+4. Workflow erneut starten. Unter **Settings → Pages** danach „Enforce HTTPS“ aktivieren.
+
+Bis dahin läuft die Seite unter `https://pyke1302.github.io/rettora-website/`. Alle Links auf der Seite sind relativ und funktionieren unter beiden Adressen.
