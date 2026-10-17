@@ -2,17 +2,20 @@
 
 ## Pflicht
 - [ ] Gewerbe: beim Gewerbeamt schriftlich bestätigen lassen, dass die Konzeption und Erstellung von Schulungsmaterialien im Auftrag abgedeckt ist.
-- [ ] Geschäftliche E-Mail-Adresse einrichten und in `index.html` (Kontakt), `impressum.html` und `datenschutz.html` eintragen.
-- [ ] Impressum vollständig ausfüllen: ladungsfähige Anschrift, Kontakt, ggf. USt-IdNr. bzw. Wirtschafts-ID. Wer die Privatadresse nicht veröffentlichen will, prüft eine Geschäftsadresse.
-- [ ] Hoster festlegen und Datenschutzerklärung daran anpassen (Name, Anschrift, Speicherdauer der Logdaten, ggf. Auftragsverarbeitungsvertrag).
+- [ ] Geschäftliche E-Mail-Adresse einrichten und in `index.html` (Kontakt), `impressum.html`, `datenschutz.html` und `assets/anfrage.js` (`KONTAKT_EMAIL`) eintragen.
+- [x] Impressum: Anschrift, Telefon und weiterer Ansprechpartner (Thomas Wronski, mit seinem Einverständnis) eingetragen. USt-IdNr. bzw. Wirtschafts-ID ergänzen, sobald vorhanden.
+- [x] Hoster festgelegt: GitHub Pages, in der Datenschutzerklärung eingetragen.
+- [ ] Datenschutzerklärung rechtlich prüfen (Speicherdauer der Logdaten bei GitHub, Drittlandübermittlung).
 - [ ] Medizinische Angaben der Beispielkarte „Akute Atemnot“ prüfen.
-- [ ] Texte über Felix und Rettora auf Richtigkeit prüfen.
+- [ ] Texte über Rettora (Abschnitte „Über Rettora“, FAQ, Projekte) mit Thomas auf Richtigkeit prüfen.
 - [ ] `noindex, nofollow` aus allen drei Seiten entfernen.
+- [ ] Unter Settings → Pages die Quelle „GitHub Actions“ wählen und den Workflow „Website veröffentlichen (GitHub Pages)“ von Hand starten.
 
 ## Empfohlen
 - [ ] Arbeitsprobe als PDF fertigstellen (z. B. die Einsatzsimulation „Akute Atemnot“) und auf der Seite verlinken.
-- [ ] Links zu EinsatzDeck, Lernplattform und Shorts ergänzen, sobald öffentliche Adressen feststehen.
-- [ ] Eigene Domain einrichten.
+- [x] Links zu Lernplattform und Shorts (YouTube, Instagram) ergänzt.
+- [ ] Bildschirmfotos der Lernplattform (Startseite, Frage, Lernkarte, Simulation) ergänzen.
+- [ ] Eigene Domain einrichten und als Repo-Variable `PAGES_DOMAIN` hinterlegen.
 - [ ] Vorschaubild für geteilte Links (`og:image`) ergänzen.
 - [ ] Falls Arbeitslosengeld bezogen wird: Nebentätigkeit vor dem ersten bezahlten Auftrag bei der Agentur für Arbeit melden.
 
