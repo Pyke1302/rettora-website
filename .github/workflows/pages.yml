@@ -26,7 +26,7 @@ jobs:
 
       - name: Platzhalter prüfen
         run: |
-          if grep -n 'class="fill"\|class="todo"' index.html impressum.html datenschutz.html; then
+          if grep -n 'class="fill"\|class="todo"\|class="draft-note"' index.html impressum.html datenschutz.html; then
             echo "Es sind noch markierte Platzhalter offen." >&2
             exit 1
           fi
@@ -38,11 +38,11 @@ jobs:
       - name: Seite zusammenstellen
         run: |
           mkdir _site
-          cp index.html impressum.html datenschutz.html _site/
+          cp index.html impressum.html datenschutz.html robots.txt sitemap.xml _site/
           cp -r assets .nojekyll _site/
 
       - name: Eigene Domain (optional)
-        # Repo-Variable PAGES_DOMAIN setzen, z. B. "www.rettora.de".
+        # Repo-Variable PAGES_DOMAIN setzen: "rettora.de".
         # Leer lassen, solange die Seite unter github.io laufen soll.
         if: ${{ vars.PAGES_DOMAIN != '' }}
         run: echo "${{ vars.PAGES_DOMAIN }}" > _site/CNAME

@@ -1,7 +1,6 @@
 // Anfragebogen: bereitet eine E-Mail im eigenen Mailprogramm vor.
 // Es werden keine Daten an diese Website übertragen.
-// Vor dem Livegang die geschäftliche Adresse eintragen, z. B. "kontakt@ihre-domain.de".
-const KONTAKT_EMAIL = "";
+const KONTAKT_EMAIL = "kontakt@rettora.de";
 
 (function () {
   const form = document.getElementById("anfrage-form");
