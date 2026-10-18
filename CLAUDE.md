@@ -19,7 +19,8 @@ Alles hier ist für jeden lesbar, auch Commits und Branches. Deshalb nie ins Rep
 - Veröffentlichung über den Workflow „Website veröffentlichen (GitHub Pages)“, nur von Hand und nur nach Freigabe von Felix. Er bricht ab, solange markierte Platzhalter offen sind.
 - Schriften (Archivo, Source Serif 4) liegen selbst gehostet in `assets/fonts/` (SIL Open Font License). Keine Google Fonts oder anderen Drittanbieter einbinden, damit keine Daten an Dritte gehen.
 - Farben: typisches Rettora-Blau wie in der Lernplattform und den Shorts (Navy `#07172d`, Cyan `#20d4d9` als Akzent, Rot `#ff6b75` als Signal). Als Variablen oben in `assets/site.css` definiert. Die Seite hat nur dieses eine Farbschema, unabhängig von der Systemeinstellung.
-- Alle Seiten tragen bis zum Livegang `noindex, nofollow`.
+- Domain: rettora.de (bei netcup, dort auch das Postfach `kontakt@rettora.de`). Die Seite läuft bei GitHub Pages; die Repo-Variable `PAGES_DOMAIN` setzt die Domain.
+- Der Workflow bricht ab, solange `class="fill"`, `class="todo"` oder `class="draft-note"` in den Seiten stehen.
 
 ## Inhaltliche Regeln
 - Nichts versprechen, was es noch nicht gibt. Beispielpakete sind als Beispiele gekennzeichnet; Projekte werden mit ihrem echten Umfang genannt.

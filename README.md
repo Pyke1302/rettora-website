@@ -25,10 +25,11 @@ und `http://localhost:8000` aufrufen.
 
 ## Struktur
 - `index.html` – Startseite
-- `impressum.html`, `datenschutz.html` – Rechtstexte (Entwurf mit Platzhaltern)
+- `impressum.html`, `datenschutz.html` – Rechtstexte
+- `robots.txt`, `sitemap.xml` – für Suchmaschinen unter rettora.de
 - `assets/site.css` – Gestaltung, Farben und Schriften
 - `assets/anfrage.js` – Anfragebogen (öffnet eine vorbereitete E-Mail, sendet nichts)
-- `assets/img/` – Vorschaubilder der Lernvideos
+- `assets/img/` – Vorschaubilder der Lernvideos und `vorschau.png` für geteilte Links
 - `.github/workflows/pages.yml` – Veröffentlichung auf GitHub Pages, nur von Hand
 - `assets/fonts/` – selbst gehostete Schriften mit Lizenzen
 - `docs/LIVEGANG.md` – was vor der Veröffentlichung erledigt sein muss
