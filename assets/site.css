@@ -118,7 +118,7 @@ a:hover { text-decoration-thickness: 2px; }
   font-family: var(--font-ui); font-weight: 760; font-stretch: 125%;
   font-size: 1.3rem; letter-spacing: .01em; color: var(--ink); text-decoration: none;
 }
-.brand svg { width: 1.9rem; height: 1.9rem; flex: none; }
+.brand img { width: 2.5rem; height: 2.5rem; flex: none; border-radius: 50%; }
 .site-nav ul { list-style: none; display: flex; flex-wrap: wrap; gap: .3rem 1.6rem; }
 .site-nav a {
   font-family: var(--font-ui); font-size: .95rem; font-weight: 520;
