@@ -208,6 +208,11 @@ a:hover { text-decoration-thickness: 2px; }
 }
 .column { display: grid; gap: .9rem; align-content: start; min-width: 0; }
 .column > p { color: var(--muted); }
+.column-icon {
+  display: grid; place-items: center; width: 2.5rem; height: 2.5rem;
+  border: 1.5px solid var(--petrol); border-radius: 50%; color: var(--petrol);
+  margin-bottom: -.3rem;
+}
 
 .ticks { list-style: none; display: grid; gap: .45rem; font-size: 1rem; line-height: 1.5; }
 .ticks li { padding-left: 1.4rem; position: relative; }
@@ -327,15 +332,17 @@ mark.fill { background: var(--petrol-soft); color: var(--ink); padding: 0 .25em;
 /* Projekte: Links */
 .project-links { display: flex; flex-wrap: wrap; gap: .3rem 1.25rem; font-family: var(--font-ui); font-size: 1rem; }
 
-/* Projekte: EinsatzDeck-Kartenvorschau */
-.deck-preview { list-style: none; display: grid; grid-template-columns: repeat(3, minmax(0, 1fr)); gap: .5rem; margin: .25rem 0 0; }
+/* Projekte: EinsatzDeck-Kartenvorschau (erstes Bild groß, zwei weitere darunter) */
+.deck-preview { list-style: none; display: grid; grid-template-columns: repeat(2, minmax(0, 1fr)); gap: .5rem; margin: .5rem 0 0; }
+.deck-preview li:first-child { grid-column: 1 / -1; }
 .deck-preview img {
   width: 100%; height: auto; aspect-ratio: 4 / 3; object-fit: cover; object-position: top;
   border-radius: 6px; border: 1px solid var(--line); display: block; background: var(--surface);
 }
 
-/* Lernplattform: Einblick per Screenshot */
-.platform-preview { list-style: none; display: grid; grid-template-columns: repeat(3, minmax(0, 1fr)); gap: .5rem; margin: .25rem 0 0; }
+/* Lernplattform: Einblick per Screenshot (erstes Bild groß, zwei weitere darunter) */
+.platform-preview { list-style: none; display: grid; grid-template-columns: repeat(2, minmax(0, 1fr)); gap: .5rem; margin: .5rem 0 0; }
+.platform-preview li:first-child { grid-column: 1 / -1; }
 .platform-preview img {
   width: 100%; height: auto; aspect-ratio: 15 / 7; object-fit: cover; object-position: top;
   border-radius: 6px; border: 1px solid var(--line); display: block; background: var(--surface);
