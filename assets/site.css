@@ -334,6 +334,13 @@ mark.fill { background: var(--petrol-soft); color: var(--ink); padding: 0 .25em;
   border-radius: 6px; border: 1px solid var(--line); display: block; background: var(--surface);
 }
 
+/* Lernplattform: Einblick per Screenshot */
+.platform-preview { list-style: none; display: grid; grid-template-columns: repeat(3, minmax(0, 1fr)); gap: .5rem; margin: .25rem 0 0; }
+.platform-preview img {
+  width: 100%; height: auto; aspect-ratio: 15 / 7; object-fit: cover; object-position: top;
+  border-radius: 6px; border: 1px solid var(--line); display: block; background: var(--surface);
+}
+
 /* Lernvideos */
 .video-grid {
   list-style: none; display: grid; grid-template-columns: repeat(6, minmax(0, 1fr)); gap: 1.75rem 1.25rem;
