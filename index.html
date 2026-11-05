@@ -39,6 +39,7 @@
         <li><a href="#projekte">Projekte</a></li>
         <li><a href="#fragen">Fragen</a></li>
         <li><a href="#kontakt">Kontakt</a></li>
+        <li><a class="nav-access" href="https://lernen.rettora.de/zugang" data-test-access>Testzugang</a></li>
       </ul>
     </nav>
   </div>
@@ -314,6 +315,7 @@
             <li>RS</li>
             <li>NFS</li>
           </ul>
+          <p class="project-links"><a class="button" href="https://lernen.rettora.de/zugang" data-test-access>Lernplattform testen →</a></p>
           <ul class="platform-preview" aria-label="Einblick in die Lernplattform">
             <li><img src="assets/img/lernplattform-uebersicht.jpg" alt="Übersicht der Rettora-Lernplattform mit Schnellstart und Lernmodulen" loading="lazy"></li>
             <li><img src="assets/img/lernplattform-lernkarten.jpg" alt="Lernkarten-Modus der Rettora-Lernplattform, Beispiel Anaphylaxie" loading="lazy"></li>
@@ -393,7 +395,7 @@
         </details>
         <details>
           <summary>Brauchen Ihre Teilnehmenden ein Konto für die Lernplattform?</summary>
-          <p>Nein. Die Lernplattform läuft im Browser ohne Anmeldung. Der Lernstand wird auf dem jeweiligen Gerät gespeichert, es werden keine Konten der Teilnehmenden angelegt.</p>
+          <p>Ein persönliches Konto ist nicht nötig. Den geschützten Testbereich öffnen Sie mit einem Zugangscode, den Sie bei uns anfragen können. Der Lernstand wird auf dem jeweiligen Gerät gespeichert, es werden keine Konten der Teilnehmenden angelegt.</p>
         </details>
         <details>
           <summary>Für welche Ausbildungsstufen eignet sich das Material?</summary>
@@ -470,6 +472,25 @@
     </ul>
   </div>
 </footer>
+<dialog class="test-access" id="test-access" aria-labelledby="test-access-title" aria-describedby="test-access-description">
+  <button class="test-access-close" type="button" aria-label="Testzugang schließen">×</button>
+  <p class="test-access-eyebrow">RETTORA LERNPLATTFORM</p>
+  <h2 id="test-access-title">Einblick in die Lernplattform.</h2>
+  <p id="test-access-description">Entdecken Sie Fragentraining, Lernkarten und Einsatzsimulationen für RH, RS und NFS.</p>
+  <form action="https://lernen.rettora.de/zugang" method="post">
+    <label for="test-access-code">Sie haben bereits einen Zugangscode?</label>
+    <input id="test-access-code" name="code" type="password" autocomplete="current-password" autocapitalize="none" spellcheck="false" maxlength="128" required placeholder="Zugangscode eingeben">
+    <button class="button" type="submit">Lernplattform öffnen →</button>
+    <p class="test-access-note">Öffnet den geschützten Testbereich. Der Zugang bleibt für 8 Stunden auf diesem Gerät freigeschaltet.</p>
+  </form>
+  <div class="test-access-request">
+    <h3>Noch keinen Zugangscode?</h3>
+    <p>Lernen Sie Rettora für Ihre Einrichtung oder Ihren Lehrgang kennen.</p>
+    <a class="button button--quiet" href="mailto:kontakt@rettora.de?subject=Testzugang%20zur%20Rettora-Lernplattform&amp;body=Guten%20Tag%2C%0A%0Aich%20m%C3%B6chte%20die%20Rettora-Lernplattform%20kennenlernen.%0A%0AEinrichtung%3A%20%0AAusbildungsstufe%3A%20%0A%0AVielen%20Dank!">Testzugang anfragen</a>
+    <p class="test-access-note">Öffnet Ihr E-Mail-Programm. Sie prüfen und versenden die Anfrage selbst.</p>
+  </div>
+</dialog>
 <script src="assets/anfrage.js" defer></script>
+<script src="assets/testzugang.js" defer></script>
 </body>
 </html>
