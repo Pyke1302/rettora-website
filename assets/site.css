@@ -155,7 +155,51 @@ a:hover { text-decoration-thickness: 2px; }
 .button--quiet { background: transparent; color: var(--petrol); }
 .button--quiet:hover { background: var(--petrol-soft); }
 
-/* Kopfbereich */
+/* Lernplattform: erster Einstieg, mit echtem Einblick in die Anwendung. */
+.platform-hero { scroll-margin-top: 1rem; }
+.platform-hero > .wrap {
+  display: grid; grid-template-columns: minmax(0, 1fr) minmax(0, 1fr);
+  gap: 3rem; align-items: center;
+  padding-block: clamp(3rem, 2rem + 4vw, 6rem);
+}
+.platform-hero-text { display: grid; gap: 1.35rem; min-width: 0; }
+.platform-eyebrow { color: var(--petrol); font: 650 .75rem/1.5 var(--font-ui); letter-spacing: .12em; }
+.platform-hero h1 { font-size: clamp(2.3rem, 1.5rem + 3vw, 3.5rem); font-stretch: 108%; line-height: 1.08; }
+.platform-hero h1 span { color: var(--petrol); }
+.platform-lead { color: var(--muted); font-size: var(--step-1); line-height: 1.6; max-width: 34em; }
+.platform-levels { display: flex; gap: .55rem; list-style: none; font: 650 .8rem var(--font-ui); }
+.platform-levels li { padding: .3rem .8rem; border: 1px solid #356079; border-radius: 999px; background: var(--surface); }
+.platform-levels abbr { text-decoration: none; }
+.platform-access-note, .platform-request { font: .85rem/1.6 var(--font-ui); color: var(--muted); }
+.platform-request { margin-top: -.55rem; }
+.platform-window {
+  margin: 0; min-width: 0; overflow: hidden; border: 1px solid #356079;
+  border-radius: 12px; background: var(--surface); box-shadow: 0 24px 70px #0005;
+}
+.platform-window-bar { display: flex; justify-content: space-between; gap: 1rem; padding: 1rem 1.2rem; font: 600 .8rem var(--font-ui); border-bottom: 1px solid var(--line); }
+.platform-window-bar span:last-child { color: var(--petrol); }
+.platform-window > a { display: block; }
+.platform-window img { display: block; width: 100%; height: auto; }
+.platform-window figcaption { padding: 1rem 1.2rem; font: .85rem/1.5 var(--font-ui); color: var(--muted); border-top: 1px solid var(--line); }
+.platform-features { background: linear-gradient(135deg, #0b273f, var(--paper)); }
+.platform-feature-grid { display: grid; grid-template-columns: repeat(3, minmax(0, 1fr)); gap: 2rem 3rem; }
+.platform-feature { display: grid; align-content: start; gap: .85rem; padding-top: 1.25rem; border-top: 2px solid var(--petrol); }
+.platform-feature-number { color: var(--petrol); font: 600 .75rem var(--font-ui); letter-spacing: .06em; }
+.platform-feature p { color: var(--muted); }
+.platform-features-link { margin-top: 2.5rem; font: 600 1rem var(--font-ui); }
+.hero.section { padding-block: 0; }
+@media (max-width: 960px) {
+  .platform-hero > .wrap { grid-template-columns: minmax(0, 1fr); gap: 2rem; }
+  .platform-window { max-width: 46rem; }
+}
+@media (max-width: 720px) {
+  .platform-feature-grid { grid-template-columns: minmax(0, 1fr); }
+  .platform-hero .actions { align-items: stretch; flex-direction: column; }
+  .platform-hero .actions .button { text-align: center; line-height: 1.3; }
+  .site-nav ul { gap: .8rem 1.1rem; align-items: center; }
+}
+
+/* Kopfbereich für Unterrichtsmaterial */
 .hero .wrap {
   display: grid; grid-template-columns: minmax(0, 1.15fr) minmax(0, .85fr);
   gap: 3rem 4.5rem; align-items: center;
