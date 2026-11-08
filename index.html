@@ -21,57 +21,39 @@
 <link rel="icon" href="assets/favicon.svg" type="image/svg+xml">
 <link rel="preload" href="assets/fonts/archivo-variable.woff2" as="font" type="font/woff2" crossorigin>
 <link rel="stylesheet" href="assets/site.css">
+<link rel="stylesheet" href="assets/modern-site.css">
 </head>
 <body>
 <a class="skip" href="#inhalt">Zum Inhalt springen</a>
 
-<header class="site-header">
-  <div class="wrap">
-    <a class="brand" href="./" aria-label="Rettora, zur Startseite">
-      <img src="assets/img/logo.webp" alt="" width="40" height="40">
-      Rettora
-    </a>
-    <nav class="site-nav" aria-label="Hauptnavigation">
-      <ul>
-        <li><a href="#lernplattform">Lernplattform</a></li>
-        <li><a href="#leistungen">Leistungen</a></li>
-        <li><a href="#pakete">Beispielpakete</a></li>
-        <li><a href="#zusammenarbeit">Zusammenarbeit</a></li>
-        <li><a href="#projekte">Projekte</a></li>
-        <li><a href="#fragen">Fragen</a></li>
-        <li><a href="#kontakt">Kontakt</a></li>
-        <li><a class="nav-access" href="https://lernen.rettora.de/zugang" data-test-access>Lernplattform öffnen →</a></li>
-      </ul>
-    </nav>
-  </div>
-</header>
+<header class="site-header"><div class="wrap"><a class="brand" href="./" aria-label="Rettora, zur Startseite"><span class="brand-symbol" aria-hidden="true">+</span><span>Rettora<span class="brand-dot">.</span></span></a><button class="menu-toggle" type="button" aria-expanded="false" aria-controls="main-menu" hidden>Menü <span aria-hidden="true">☰</span></button><nav class="site-nav" id="main-menu" aria-label="Hauptnavigation"><ul><li><a href="#lernplattform">Lernplattform</a></li><li><a href="#plattform-funktionen">So funktioniert’s</a></li><li><a href="#leistungen">Für Schulen</a></li><li><a href="#kontakt">Kontakt</a></li><li><a class="nav-access" href="https://lernen.rettora.de/zugang" data-test-access>Zum Lernraum <span aria-hidden="true">↗</span></a></li></ul></nav></div></header>
 
 <main id="inhalt">
 
   <section class="platform-hero" id="lernplattform" aria-labelledby="platform-title">
     <div class="wrap">
       <div class="platform-hero-text">
-        <p class="platform-eyebrow">DIE RETTORA LERNPLATTFORM</p>
-        <h1 id="platform-title">Rettungsdienst lernen.<br><span>Schritt für Schritt.</span></h1>
-        <p class="platform-lead">Fragentraining, Lernkarten und Einsatzsimulationen für RH, RS und NFS. Lernen Sie direkt im Browser – in Ihrem eigenen Tempo.</p>
+        <p class="platform-eyebrow">LERNEN FÜR DEN RETTUNGSDIENST</p>
+        <p class="hero-status"><span aria-hidden="true"></span> Jetzt in der Testphase</p><h1 id="platform-title">Mehr verstehen.<br><span>Sicherer im Wissen.</span></h1>
+        <p class="platform-lead">Der digitale Lernraum für Ihre Ausbildung im Rettungsdienst. Fragen trainieren, Wissen festigen und Einsatzszenarien durchspielen – in Ihrem eigenen Tempo.</p>
         <ul class="platform-levels" aria-label="Lernziele">
           <li><abbr title="Rettungshelfer">RH</abbr></li>
           <li><abbr title="Rettungssanitäter">RS</abbr></li>
           <li><abbr title="Notfallsanitäter">NFS</abbr></li>
         </ul>
         <div class="actions">
-          <a class="button" href="https://lernen.rettora.de/zugang" data-test-access>Lernplattform öffnen →</a>
-          <a class="button button--quiet" href="#plattform-funktionen">Funktionen entdecken</a>
+          <a class="button" href="https://lernen.rettora.de/zugang" data-test-access>Lernplattform entdecken <span aria-hidden="true">↗</span></a>
+          <a class="button button--quiet" href="#plattform-funktionen">So funktioniert’s <span aria-hidden="true">↓</span></a>
         </div>
-        <p class="platform-access-note">Aktuell in der Testphase · Persönlicher Einmalcode · Kein Konto erforderlich</p>
+        <p class="platform-access-note">Persönlicher Testcode · Kein Konto erforderlich</p>
         <p class="platform-request">Noch keinen Code? <a href="mailto:kontakt@rettora.de?subject=Testzugang%20zur%20Rettora-Lernplattform">Kostenfreien Testzugang anfragen</a></p>
       </div>
       <figure class="platform-window">
-        <div class="platform-window-bar"><span>Rettora Lernplattform</span><span>Einblick</span></div>
+        <div class="platform-window-bar"><span><i></i><i></i><i></i></span><span>Ihr digitaler Lernraum</span><span>RETTORA</span></div>
         <a href="https://lernen.rettora.de/zugang" data-test-access aria-label="Rettora-Lernplattform öffnen">
-          <img src="assets/img/lernplattform-uebersicht.jpg" alt="Übersicht der Rettora-Lernplattform mit Schnellstart, Fragentraining und Lernmodulen" width="900" height="420" fetchpriority="high">
+          <img src="assets/img/lernraum-dashboard.jpg" alt="Der neue Rettora-Lernraum: übersichtliches Dashboard mit Fragentraining, Lernkarten, Simulationen und Lernfortschritt" width="1440" height="1000" fetchpriority="high">
         </a>
-        <figcaption>Fragen üben. Wissen wiederholen. Auf den Einsatz vorbereiten.</figcaption>
+        <figcaption>RH · RS · NFS <span>Ein Lernraum, der zu Ihrer Ausbildung passt.</span></figcaption>
       </figure>
     </div>
   </section>
@@ -80,22 +62,22 @@
     <div class="wrap">
       <div class="section-head">
         <p class="platform-eyebrow">SO LERNEN SIE MIT RETTORA</p>
-        <h2 id="platform-features-title">Vom Wissen zur Anwendung.</h2>
+        <h2 id="platform-features-title">Wissen wird besser, wenn man es anwendet.</h2>
         <p>Wählen Sie Ihr Lernziel und verbinden Sie gezieltes Wiederholen mit Prüfungsvorbereitung und digitalen Einsatzszenarien.</p>
       </div>
       <div class="platform-feature-grid">
         <article class="platform-feature">
-          <span class="platform-feature-number" aria-hidden="true">01 / TRAINIEREN</span>
+          <span class="feature-glyph" aria-hidden="true">↗</span><span class="platform-feature-number">TRAINIEREN</span>
           <h3>Fragen &amp; Prüfungen</h3>
           <p>Trainieren Sie nach Themen, wiederholen Sie Fehler und bereiten Sie sich mit Prüfungssimulationen vor.</p>
         </article>
         <article class="platform-feature">
-          <span class="platform-feature-number" aria-hidden="true">02 / WIEDERHOLEN</span>
+          <span class="feature-glyph" aria-hidden="true">▱</span><span class="platform-feature-number">WIEDERHOLEN</span>
           <h3>Digitale Lernkarten</h3>
           <p>Wiederholen Sie wichtige Inhalte in überschaubaren Lerneinheiten und behalten Sie Ihren Lernfortschritt im Blick.</p>
         </article>
         <article class="platform-feature">
-          <span class="platform-feature-number" aria-hidden="true">03 / ANWENDEN</span>
+          <span class="feature-glyph" aria-hidden="true">⌁</span><span class="platform-feature-number">ANWENDEN</span>
           <h3>Einsatzsimulationen</h3>
           <p>Bearbeiten Sie digitale Szenarien für KTW und RTW – mit Aufgaben passend zu Ihrem Ausbildungsstand.</p>
         </article>
@@ -550,5 +532,6 @@
 </dialog>
 <script src="assets/anfrage.js" defer></script>
 <script src="assets/testzugang.js" defer></script>
+<script src="assets/navigation.js" defer></script>
 </body>
 </html>
